@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fitpass HOPn – Membership Plans</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="bg-gray-50 text-gray-900 transition-all duration-300">
+
+  <section class="bg-white py-12 px-4">
+    <div class="max-w-7xl mx-auto">
+      <div class="flex justify-end mb-6">
+        <button id="langToggle" class="text-sm text-gray-700 border px-4 py-1 rounded hover:bg-gray-100 transition">
+          🇺🇸 English
+        </button>
+      </div>
+
+      <!-- English -->
+      <div id="plans-en" class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-5 gap-6">
+        <!-- Bronze -->
+        <div class="rounded-2xl shadow-md p-6 text-center hover:shadow-lg transition">
+          <h3 class="text-xl font-semibold mb-1 text-[#cd7f32]">Bronze</h3>
+          <p class="text-lg font-bold mb-4">$20–30/month</p>
+          <ul class="text-sm text-gray-600 mb-4 space-y-2">
+            <li>Access to gyms</li>
+            <li>1 personal training</li>
+            <li>Basic classes</li>
+          </ul>
+          <button class="mt-auto bg-[#3BAA8D] text-white px-4 py-2 rounded-md hover:bg-[#319a7e] transition">Subscribe</button>
+        </div>
+
+        <!-- Silver -->
+        <div class="rounded-2xl shadow-md p-6 text-center hover:shadow-lg transition">
+          <h3 class="text-xl font-semibold mb-1 text-[#c0c0c0]">Silver</h3>
+          <p class="text-lg font-bold mb-4">$30–40/month</p>
+          <ul class="text-sm text-gray-600 mb-4 space-y-2">
+            <li>All Bronze benefits</li>
+            <li>Group training</li>
+            <li>Nutrition guide</li>
+          </ul>
+          <button class="mt-auto bg-[#3BAA8D] text-white px-4 py-2 rounded-md hover:bg-[#319a7e] transition">Subscribe</button>
+        </div>
+
+        <!-- Gold -->
+        <div class="rounded-2xl shadow-md p-6 text-center hover:shadow-lg transition">
+          <h3 class="text-xl font-semibold mb-1 text-[#d4af37]">Gold</h3>
+          <p class="text-lg font-bold mb-4">$40–60/month</p>
+          <ul class="text-sm text-gray-600 mb-4 space-y-2">
+            <li>All Silver benefits</li>
+            <li>Unlimited classes</li>
+            <li>Monthly body scan</li>
+          </ul>
+          <button class="mt-auto bg-[#3BAA8D] text-white px-4 py-2 rounded-md hover:bg-[#319a7e] transition">Subscribe</button>
+        </div>
+
+        <!-- Club+ -->
+        <div class="rounded-2xl shadow-md p-6 text-center hover:shadow-lg transition">
+          <h3 class="text-xl font-semibold mb-1 text-green-700">Club+</h3>
+          <p class="text-lg font-bold mb-4">$60–75/month</p>
+          <ul class="text-sm text-gray-600 mb-4 space-y-2">
+            <li>All Gold benefits</li>
+            <li>Priority booking</li>
+            <li>Free guest passes</li>
+          </ul>
+          <button class="mt-auto bg-[#3BAA8D] text-white px-4 py-2 rounded-md hover:bg-[#319a7e] transition">Subscribe</button>
+        </div>
+
+        <!-- Platinum -->
+        <div class="rounded-2xl shadow-md p-6 text-center hover:shadow-lg transition">
+          <h3 class="text-xl font-semibold mb-1 text-gray-800">Platinum</h3>
+          <p class="text-lg font-bold mb-4">$75–90/month</p>
+          <ul class="text-sm text-gray-600 mb-4 space-y-2">
+            <li>All Club+ benefits</li>
+            <li>1-on-1 coaching</li>
+            <li>Wellness concierge</li>
+          </ul>
+          <button class="mt-auto bg-[#3BAA8D] text-white px-4 py-2 rounded-md hover:bg-[#319a7e] transition">Subscribe</button>
+        </div>
+      </div>
+
+      <!-- Arabic -->
+      <div id="plans-ar" lang="ar" dir="rtl" class="hidden grid grid-cols-1 md:grid-cols-2 xl:grid-cols-5 gap-6 text-right">
+        <!-- برونزي - Bronze  -->
+        <div class="rounded-2xl shadow-md p-6 flex flex-col items-center text-center hover:shadow-lg transition">
+          <h3 class="text-xl font-semibold mb-1 text-[#cd7f32]">برونزي</h3>
+          <p class="text-lg font-bold mb-4">٢٠–٣٠ دولار/شهر</p>
+          <ul class="text-sm text-gray-600 mb-4 space-y-2">
+            <li>دخول إلى الصالات</li>
+            <li>جلسة تدريب واحدة</li>
+            <li>صفوف أساسية</li>
+          </ul>
+          <button class="mt-auto bg-[#3BAA8D] text-white px-4 py-2 rounded-md hover:bg-[#319a7e] transition">اشترك الآن</button>
+        </div>
+
+        <!-- فضي - Silver -->
+        <div class="rounded-2xl shadow-md p-6 flex flex-col items-center text-center hover:shadow-lg transition">
+          <h3 class="text-xl font-semibold mb-1 text-[#c0c0c0]">فضي</h3>
+          <p class="text-lg font-bold mb-4">٣٠–٤٠ دولار/شهر</p>
+          <ul class="text-sm text-gray-600 mb-4 space-y-2">
+            <li>مزايا برونزي</li>
+            <li>تدريب جماعي</li>
+            <li>دليل تغذية</li>
+          </ul>
+          <button class="mt-auto bg-[#3BAA8D] text-white px-4 py-2 rounded-md hover:bg-[#319a7e] transition">اشترك الآن</button>
+        </div>
+
+        <!-- ذهبي - Gold -->
+        <div class="rounded-2xl shadow-md p-6 flex flex-col items-center text-center hover:shadow-lg transition">
+          <h3 class="text-xl font-semibold mb-1 text-[#d4af37]">ذهبي</h3>
+          <p class="text-lg font-bold mb-4">٤٠–٦٠ دولار/شهر</p>
+          <ul class="text-sm text-gray-600 mb-4 space-y-2">
+            <li>مزايا فضي</li>
+            <li>صفوف غير محدودة</li>
+            <li>فحص جسم شهري</li>
+          </ul>
+          <button class="mt-auto bg-[#3BAA8D] text-white px-4 py-2 rounded-md hover:bg-[#319a7e] transition">اشترك الآن</button>
+        </div>
+
+        <!-- نخبة - Club+ -->
+        <div class="rounded-2xl shadow-md p-6 flex flex-col items-center text-center hover:shadow-lg transition">
+          <h3 class="text-xl font-semibold mb-1 text-green-700">نخبة</h3>
+          <p class="text-lg font-bold mb-4">٦٠–٧٥ دولار/شهر</p>
+          <ul class="text-sm text-gray-600 mb-4 space-y-2">
+            <li>مزايا ذهبي</li>
+            <li>حجز أولوية</li>
+            <li>بطاقات ضيافة مجانية</li>
+          </ul>
+          <button class="mt-auto bg-[#3BAA8D] text-white px-4 py-2 rounded-md hover:bg-[#319a7e] transition">اشترك الآن</button>
+        </div>
+
+        <!-- بلاتيني - Platinum -->
+        <div class="rounded-2xl shadow-md p-6 flex flex-col items-center text-center hover:shadow-lg transition">
+          <h3 class="text-xl font-semibold mb-1 text-gray-800">بلاتيني</h3>
+          <p class="text-lg font-bold mb-4">٧٥–٩٠ دولار/شهر</p>
+          <ul class="text-sm text-gray-600 mb-4 space-y-2">
+            <li>مزايا نخبة</li>
+            <li>تدريب فردي خاص</li>
+            <li>مساعد صحي خاص</li>
+          </ul>
+          <button class="mt-auto bg-[#3BAA8D] text-white px-4 py-2 rounded-md hover:bg-[#319a7e] transition">اشترك الآن</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <script src="js/toggle-lang.js"></script>
+</body>
+</html>

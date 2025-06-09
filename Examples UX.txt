@@ -1,0 +1,13 @@
+
+
+
+<button aria-label="Subscribe to Bronze Plan">Subscribe</button>
+
+<button id="langToggle" aria-label="Switch to Arabic" aria-pressed="false">
+  🇺🇸 English
+</button>
+
+smoother transition?
+
+
+
